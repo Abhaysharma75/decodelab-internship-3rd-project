@@ -72,7 +72,7 @@ The interface is designed to provide a smooth experience across:
 - 🧩 DOM Manipulation
 
 ## 📂 Project Structure
-
+ 
 ```text
 StudyFocus/
 │
