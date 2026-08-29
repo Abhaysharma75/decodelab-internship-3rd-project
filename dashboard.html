@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFocus</title>
+    <link rel="stylesheet" href="study.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            Study<span>Focus</span>
+        </div>
+
+        <button id="themeToggle" class="theme-btn">🌙</button>
+
+    </header>
+
+
+    <main class="container">
+
+        <section class="welcome">
+            <div>
+                <p>STUDY PRODUCTIVITY</p>
+                <h1>StudyFocus 📚</h1>
+                <span>Plan your study. Stay focused. Track your progress.</span>
+            </div>
+        </section>
+
+
+        <section class="grid">
+
+
+            <!-- TIMER -->
+
+            <div class="card timer-card">
+
+                <div class="card-head">
+                    <div>
+                        <small>FOCUS SESSION</small>
+                        <h2>Study Timer</h2>
+                    </div>
+
+                    <span>⏱️</span>
+                </div>
+
+                <div id="timer">25:00</div>
+
+                <p id="timerStatus">
+                    Ready to focus
+                </p>
+
+                <div class="buttons">
+
+                    <button id="startBtn" class="primary">
+                        ▶ Start
+                    </button>
+
+                    <button id="pauseBtn" class="secondary">
+                        ⏸ Pause
+                    </button>
+
+                    <button id="resetBtn" class="secondary">
+                        ↻ Reset
+                    </button>
+
+                </div>
+
+                <div class="quick">
+
+                    <button data-time="25">25 min</button>
+                    <button data-time="45">45 min</button>
+                    <button data-time="60">60 min</button>
+
+                </div>
+
+            </div>
+
+
+            <!-- TODAY PLAN -->
+
+            <div class="card">
+
+                <div class="card-head">
+
+                    <div>
+                        <small>TODAY</small>
+                        <h2>Today's Plan</h2>
+                    </div>
+
+                    <span>📚</span>
+
+                </div>
+
+
+                <label>Which subject do you want to study?</label>
+
+                <input id="subject" type="text" placeholder="Example: JavaScript">
+
+
+                <label>How much do you want to study?</label>
+
+                <div class="two-inputs">
+
+                    <input id="hours" type="number" min="0" placeholder="Hours">
+
+                    <input id="minutes" type="number" min="0" max="59" placeholder="Minutes">
+
+                </div>
+
+
+                <label>What do you need to study?</label>
+
+                <textarea id="plan" placeholder="Example: Functions, arrays and 10 practice questions..."></textarea>
+
+
+                <button id="savePlan" class="primary full">
+                    Save Today's Plan
+                </button>
+
+            </div>
+
+
+            <!-- TODAY STUDIED -->
+
+            <div class="card">
+
+                <div class="card-head">
+
+                    <div>
+                        <small>PROGRESS</small>
+                        <h2>What I Studied Today</h2>
+                    </div>
+
+                    <span>✅</span>
+
+                </div>
+
+                <textarea id="studied" placeholder="Write what you studied today..."></textarea>
+
+                <button id="saveStudied" class="primary full">
+                    Save Progress
+                </button>
+
+            </div>
+
+
+            <!-- NOT STUDIED -->
+
+            <div class="card">
+
+                <div class="card-head">
+
+                    <div>
+                        <small>PENDING</small>
+                        <h2>What I Didn't Study</h2>
+                    </div>
+
+                    <span>📝</span>
+
+                </div>
+
+                <textarea id="pending" placeholder="Write what you could not complete..."></textarea>
+
+                <button id="savePending" class="secondary full">
+                    Save Pending Work
+                </button>
+
+            </div>
+
+
+            <!-- YESTERDAY -->
+
+            <div class="card">
+
+                <div class="card-head">
+
+                    <div>
+                        <small>PREVIOUS DAY</small>
+                        <h2>Yesterday</h2>
+                    </div>
+
+                    <span>📅</span>
+
+                </div>
+
+                <textarea id="yesterday" placeholder="What did you study yesterday?"></textarea>
+
+                <button id="saveYesterday" class="secondary full">
+                    Save Yesterday
+                </button>
+
+            </div>
+
+
+            <!-- SUMMARY -->
+
+            <div class="card summary">
+
+                <div class="card-head">
+
+                    <div>
+                        <small>YOUR PROGRESS</small>
+                        <h2>Today's Summary 📊</h2>
+                    </div>
+
+                </div>
+
+                <div class="summary-grid">
+
+                    <div>
+                        <span>📚</span>
+                        <small>SUBJECT</small>
+                        <strong id="summarySubject">
+                            Not selected
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>🎯</span>
+                        <small>GOAL</small>
+                        <strong id="summaryGoal">
+                            0 minutes
+                        </strong>
+                    </div>
+
+                    <div>
+                        <span>⏱️</span>
+                        <small>FOCUS TIME</small>
+                        <strong id="summaryTime">
+                            0 minutes
+                        </strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <div id="toast"></div>
+
+
+    <script src="study.js"></script>
+
+</body>
+
+</html>

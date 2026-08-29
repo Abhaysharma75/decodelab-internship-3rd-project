@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudyFocus | Developer Learning Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="login-page">
+
+        <div class="login-card">
+
+            <!-- Logo -->
+            <div class="logo">
+                Study<span>Focus</span>
+            </div>
+
+            <!-- Welcome -->
+            <div class="welcome">
+                <h1>Welcome Back 👋</h1>
+
+                <p>
+                    Login to continue your developer journey
+                </p>
+            </div>
+
+
+            <!-- Login Form -->
+            <form id="loginForm">
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input type="email" id="email" placeholder="Enter your email" autocomplete="email" required>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-group">
+
+                    <div class="password-header">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <button type="button" id="togglePassword">
+                            Show
+                        </button>
+
+                    </div>
+
+                    <input type="password" id="password" placeholder="Enter your password"
+                        autocomplete="current-password" required>
+
+                </div>
+
+
+                <!-- Options -->
+                <div class="options">
+
+                    <label class="remember">
+
+                        <input type="checkbox" id="remember">
+
+                        <span>Remember me</span>
+
+                    </label>
+
+                    <a href="#" id="forgotPassword">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <!-- Login Button -->
+                <button type="submit" class="login-btn">
+
+                    Login
+
+                    <span>→</span>
+
+                </button>
+
+
+                <!-- Message -->
+                <p id="message"></p>
+
+            </form>
+
+
+            <!-- Divider -->
+            <div class="divider">
+
+                <span></span>
+
+                <b>OR</b>
+
+                <span></span>
+
+            </div>
+
+
+            <!-- Google -->
+            <button type="button" class="google-btn" id="googleBtn">
+
+                <span>🌐</span>
+
+                Continue with Google
+
+            </button>
+
+
+            <!-- Create Account -->
+            <p class="create-account">
+
+                Don't have an account?
+
+                <a href="#" id="createAccount">
+                    Create Account
+                </a>
+
+            </p>
+
+
+            <!-- Footer -->
+            <div class="footer">
+
+                <span>StudyFocus</span>
+
+                <span>•</span>
+
+                <span>Learn · Code · Focus · Grow</span>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
