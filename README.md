@@ -3,7 +3,7 @@
 
 > 🚀 A modern study productivity web application designed to help students plan their daily learning, manage focused study sessions, track their progress, and build better study habits.
 
-## 📖 About The Project 
+## 📖 About The Project  
 
 **StudyFocus** is a student-focused productivity application currently being developed as my **3rd project during my Full-Stack Development Internship at DecodeLabs**.
 
